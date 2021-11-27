@@ -29,8 +29,8 @@ void	ft_putstr_fd(char *s, int fd)
 #include <stdio.h>
 int	main()
 {
-	int fd = open("str.txt", O_CREAT , O_RDWR )
-	ft_putstr_fd("POMS",1)
+	int fd = open("ABCD.txt", O_WRONLY | O_CREAT);
+	ft_putstr_fd("POMS",fd);
 	return (0);
 }
 
