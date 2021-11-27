@@ -10,29 +10,28 @@
 #                                                                              #
 # **************************************************************************** #
 
-// Here i'm generating a file responsible for creating our library
+#	* // Here i'm generating a file responsible for creating our library
 
 NAME = libft.a
 
-// Some flags to compile with very useful
+#	* // Some flags to compile with very useful
 
 CFLAGS = -Wall -Wextra -Werror
 
-// remove objects such objects (a savoir)
+#	*// remove objects such objects (a savoir)
 
 RM = rm -f
 
 CC = gcc
+#	* // AR stand for Archive files into our library
 
-// AR stand for Archive files into our library
-
-// r = r means that if the library already exists, replace the old files within the library with your new files.
-// c = means create the library if it did not exist.
-// s = can be seen to mean 'sort' (create a sorted index of (refreshing)) the library, so that it will be indexed and faster to access the functions in the library.
+#	* // r = r means that if the library already exists, replace the old files within the library with your new files.
+#	* // c = means create the library if it did not exist.
+#	* // s = can be seen to mean 'sort' (create a sorted index of (refreshing)) the library, so that it will be indexed and faster to access the functions in the library.
 
 AR = ar rcs
 
-// functions that must be compiled through our makefile
+#	* // functions that must be compiled through our makefile
 
 FUNCTIONS = ft_isalpha.c\
 			ft_isdigit.c\
@@ -69,11 +68,11 @@ FUNCTIONS = ft_isalpha.c\
 			ft_putnbr_fd.c\
 			ft_striteri.c\
 
+#	*  // to creat our lib please replace all files with .c extension to .o extension
+
 OBJECTS = $(FUNCTIONS:.c=.o)
 
 all : $(NAME)
-
-// to creat our lib please replace all files with .c extension to .o extension
 
 $(NAME) : $(OBJECTS)
 	@$(AR) $(NAME) $(OBJECTS)	
