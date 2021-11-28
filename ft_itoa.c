@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+/* The first function helps to calculate the length of the int */
 static int	intlen(int num)
 {
 	int	i;
