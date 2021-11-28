@@ -78,13 +78,13 @@ $(NAME) : $(OBJECTS)
 	@$(AR) $(NAME) $(OBJECTS)	
 	@echo "LIBFT CREATED SUCCESSFULLY"
 
-// delete all .o files created by our makefile
+#	* // delete all .o files created by our makefile
 
 clean :
 	@$(RM) $(OBJECTS)
 	@echo "ALL OBJECTS HAS BEEN DELETED"
 
-// delete all .o files also our libft.a 
+#	* // delete all .o files also our libft.a 
 
 fclean : clean
 	@$(RM) $(NAME)
@@ -92,6 +92,6 @@ fclean : clean
 
 re : fclean all
 
-// i give to PHONY targets name it will work even if such files named as our targets
+#	* // i give to PHONY targets name it will work even if such files named as our targets
 
 .PHONY : clean fclean re all
