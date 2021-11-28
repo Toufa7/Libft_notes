@@ -11,6 +11,11 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+/*
+This function create and return a new string by combining s1 and s2
+The s1 is placed first, followed by the s2 string.
+*/
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*join;
