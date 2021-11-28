@@ -33,3 +33,14 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (memory_block);
 }
+/*
+int main ()
+{
+	int arr[5] = {1, 3, 3, 4, 5};
+	ft_memset(arr, 5555555, 8);
+	for(int i = 0; i < 5; i++)
+	{
+		printf("%d\n", arr[i]);
+	}
+}
+/*
