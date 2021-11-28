@@ -11,6 +11,11 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+/*
+It takes a function pointer as an argument
+and them put the characters of the string s into the function f one by one
+creates a string with the characters returned from f and returns it,
+*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
