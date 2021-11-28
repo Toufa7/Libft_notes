@@ -14,7 +14,6 @@
 /*
 This function for object to set & fill a block of memory with a particular value (int c)
 First we need to convert the int c value to unsigned char 
-memset does not allocate memory it only fills a region of memory with a certain value
 */
 
 void	*ft_memset(void *s, int c, size_t n)
@@ -37,7 +36,7 @@ void	*ft_memset(void *s, int c, size_t n)
 int main ()
 {
 	int arr[5] = {1, 3, 3, 4, 5};
-	ft_memset(arr, 5555555, 8);
+	ft_memset(arr, 0, 8);
 	for(int i = 0; i < 5; i++)
 	{
 		printf("%d\n", arr[i]);
