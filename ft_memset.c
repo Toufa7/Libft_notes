@@ -21,12 +21,14 @@ void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	*memory_block;
+	unsigned char	byte;
 
+	byte = (unsigned char)c;
 	memory_block = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
-		memory_block[i] = c;
+		memory_block[i] = byte;
 		i++;
 	}
 	return (memory_block);
