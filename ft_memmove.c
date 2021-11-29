@@ -40,3 +40,18 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+
+/*
+int main ()
+
+{
+	int arr[8] = {1, 2, 3, 4, 5, 6, 7, 8};
+	memmove(&arr[3], arr, 4*sizeof(int));
+	ft_memmove(&arr[3], arr, 4*sizeof(int));
+	for (int i = 0; i < 8;i++)
+	{
+		printf("%d\n", arr[i]);
+	}
+}
+
+*/
