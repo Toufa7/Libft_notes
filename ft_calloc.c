@@ -34,3 +34,13 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (booked);
 }
+
+/*
+int    main()
+{
+	char *fill;
+	fill = ft_calloc(2,sizeof(int));
+	printf("%s",fill);
+	return (0);
+}
+*/
