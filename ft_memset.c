@@ -35,11 +35,12 @@ void	*ft_memset(void *s, int c, size_t n)
 /*
 int main ()
 {
+	int i = 0;
 	int arr[5] = {1, 3, 3, 4, 5};
-	ft_memset(arr, 0, 8);
-	for(int i = 0; i < 5; i++)
+	ft_memset(arr, 0, sizeof(int)*5);
+	while (i < 5)
 	{
-		printf("%d\n", arr[i]);
+		printf("%d\n", arr[i++]);
 	}
 }
 /*
