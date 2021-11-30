@@ -25,10 +25,10 @@ char	*ft_strrchr(const char *s, int c)
 	while (string[i])
 	{
 		if (string[i] == alpha)
-			rslt = &string[i];
+			rslt = &string[i]; // so instead of returning the first occurrence in the string the variable rslt keep holding the charachter while she's looping on the string
 		i++;
 	}
-	if (alpha == 0)
+	if (alpha == 0) // just a protecting so if the alpha was not there return the string 
 		return (&string[i]);
 	return (rslt);
 }
