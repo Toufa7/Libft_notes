@@ -18,13 +18,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1)
 		return (NULL);
-	start = 0;
-	end = ft_strlen(s1) - 1;
+	start = 0; 
+	end = ft_strlen(s1) - 1; 
 	while (s1[start] && ft_strchr(set, s1[start]))
-		start++;
+		start++; // This variable well count starting from zero and stop when found set on string we well be using ft_strchr 
 	while (start < end && s1[end] && ft_strchr(set, s1[end]))
-		end--;
-	return (ft_substr(s1, start, (end - start + 1)));
+		end--; // The same except well count starting backward
+	return (ft_substr(s1, start, (end - start + 1))); // We can use the ft_substr to get the string by triming the index of start and len will be (len - start + NULL\terminator)
 }
 
 
