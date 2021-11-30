@@ -27,12 +27,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (dest == 0 && source == 0)
 		return (NULL);
 	i = 0;
-	if (dest >= source)
+	if (dest >= source) // Here i'm handling the overlap so if dest greater or equal the src so there's a overlaping so to resolve this let's copy backward 
 		while (len-- > 0)
 		dest[len] = source[len];
 	else
 	{
-		while (i < len)
+		while (i < len) // the normal case if the given len less than the lenght of the src let's copy like ft_memcpy does 
 		{
 			dest[i] = source[i];
 			i++;
