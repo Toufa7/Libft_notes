@@ -24,8 +24,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (s1 == 0 || s2 == 0)
 		return (NULL);
-	join = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (!join)
+	join = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1)); // allocating memory for the lenght of the 2 strings
+	if (!join) // if the allocation fail please return NULL
 		return (NULL);
 	i = 0;
 	j = 0;
@@ -33,12 +33,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	{
 		join[j++] = s1[i++];
 	}
-	i = 0;
+	i = 0; // initialize index to start again on the 2nd string
 	while (s2[i] != '\0')
 	{
 		join[j++] = s2[i++];
 	}
-	join[j] = '\0';
+	join[j] = '\0'; // copying until the NULL\terminator
 	return (join);
 }
 
