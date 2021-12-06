@@ -24,3 +24,17 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+/*
+void f(unsigned int i, char *s)
+{
+	i = 32;
+	*s = s + i;
+}
+int	main()
+{
+	char s[]="ABCD";
+	ft_striteri(s,f);
+	printf("%s",s);
+}
+*/ 
