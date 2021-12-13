@@ -34,5 +34,5 @@ int	main()
 	return (0);
 }
 
-// more detail check $ulimit -a & ps
+// more detail check $ulimit -n (to get the maximum number of open file descriptors) & ps (Shows the processes for the current shell)
 */
